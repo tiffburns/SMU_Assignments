@@ -21,8 +21,7 @@ with open(csvpath, "r") as csvfile:
             candidates[candidate] = 1
 
 
-#https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary
-winner = max(candidates, key=candidates.get) #stolen from the internet
+winner = max(candidates, key=candidates.get) #stolen from the internet per teachers permission!!!! (link: https://stackoverflow.com/questions/268272/getting-key-with-maximum-value-in-dictionary )
 
 percentages = {}
 for key in candidates.keys():
