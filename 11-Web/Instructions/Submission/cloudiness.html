@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cloudiness</title>
+    <!-- Bootstrap and Bootswatch CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/minty/bootstrap.min.css" integrity="sha384-H4X+4tKc7b8s4GoMrylmy2ssQYpDHoqzPa9aKXbDwPoPUA3Ra8PA5dGzijN+ePnH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Set the border color */
+        
+        .custom-toggler.navbar-toggler {
+            border-color: #1c1cca;
+        }
+        /* Setting the stroke to green using rgb values (0, 128, 0) */
+        
+        .custom-toggler .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(224,224,226,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    </style>
+    <link rel="stylesheet" href="Assets/style.css">
+
+    <!-- JS for Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" id="Latitude" href="index2.html">Latitude</a>
+        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index2.html">Welcome</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <!--Normally these medium columns go full wide on small screen sizes-->
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="box">
+                    <h1>Summary: Latitude vs. Cloudiness</h1>
+                    <br>
+                    <img id="home_page_left_png" class="img-fluid" src="assets/images/Fig1.png" alt="Latitude vs Temp">
+                    <P>Decades of satellite observations and astronaut photographs show that clouds dominate space-based views of Earth. One study based on nearly a decade of satellite data estimated that about 67 percent of Earth’s surface is typically
+                        covered by clouds.</p>
+                    <p>This is especially the case over the oceans, where other research shows less than 10 percent of the sky is completely clear of clouds at any one time. Over land, 30 percent of skies are completely cloud free.
+                    </p>
+                    <p> Clouds also tend to form in abundance in the middle latitudes 60 degrees north and south of the equator. This is where the edges of polar and mid-latitude (or Ferrel) circulation cells collide and push air upward, fueling the formation
+                        of the large-scale frontal systems that dominate weather patterns in the mid-latitudes. While clouds tend to form where air rises as part of atmospheric circulation patterns, descending air inhibits cloud formation. Since air descends
+                        between about 15 and 30 degrees north and south of the equator, clouds are rare and deserts are common at this latitude. Read more at : https://earthobservatory.nasa.gov/images/85843/cloudy-earth</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="container">
+                    <div class="box">
+                        <h1>Visualizations</h1>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6 viz_margin">
+                                <h4>v. Temperature</h4>
+                                <a href="temperature.html">
+                                    <img class="home_page_right_png" src="assets/images/Fig3.png" alt="Latitude vs Temp">
+                                </a>
+                            </div>
+                            <div class="col-md-6 viz_margin">
+                                <h4>v. Cloudiness</h4>
+                                <a href="cloudiness.html">
+                                    <img class="home_page_right_png" src="assets/images/Fig1.png" alt="Latitude vs Cloudiness">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 viz_margin">
+                                <h4>v. Humidity</h4>
+                                <a href="humidity.html">
+                                    <img class="home_page_right_png" src="assets/images/Fig2.png" alt="Latitude vs Humidity">
+                                </a>
+                            </div>
+                            <div class="col-md-6 viz_margin">
+                                <h4>v. Windspeed</h4>
+                                <a href="windspeed.html">
+                                    <img class="home_page_right_png" src="assets/images/Fig4.png" alt="Latitude vs Wind Speed">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
